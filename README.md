@@ -46,7 +46,7 @@ Ensure you have the following installed before setting up the project:
         SUPER_ADMIN_PASSWORD=password
 
         SERVER_PORT=5111
-        SERVER_URL=http://localhost:5111`
+        SERVER_URL=http://localhost:5111
 
 4.  **Start MongoDB and Redis:** Ensure MongoDB and Redis are running before starting the API.
 
