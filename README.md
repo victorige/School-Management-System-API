@@ -36,7 +36,7 @@ Ensure you have the following installed before setting up the project:
 
 3.  **Set up environment variables:** Create a `.env` file in the root directory and add the following variables:
 
-        `SERVICE_NAME=school-managment
+        SERVICE_NAME=school-managment
 
         MONGO_URI=mongodb://localhost:27017/school-managment
         REDIS_URI=redis://localhost:6379
