@@ -26,7 +26,7 @@ Ensure you have the following installed before setting up the project:
 
 1.  **Clone the repository:**
 
-        git clone https://github.com/YOUR_GITHUB_USERNAME/school-management-api.git
+        git clone https://github.com/victorige/School-Management-System-API.git
 
     cd school-management-api`
 
