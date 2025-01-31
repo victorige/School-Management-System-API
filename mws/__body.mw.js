@@ -18,7 +18,7 @@ module.exports = ({ meta, config, managers, validators, utils }) => {
           500
         );
 
-      const requestData = req.query;
+      const requestData = req.body;
 
       utils.logger("INFO", "Validating request data...");
 
@@ -29,7 +29,7 @@ module.exports = ({ meta, config, managers, validators, utils }) => {
       if (validationErrors) return utils.throwError(validationErrors, 400);
 
       utils.logger("INFO", `Validation successful for ${moduleName}:${fnName}`);
-      next(req.query); // Proceed to the next middleware or handler
+      next(req.body); // Proceed to the next middleware or handler
     } catch (error) {
       return utils.dispatchError(res, managers, "Validation failed", error);
     }

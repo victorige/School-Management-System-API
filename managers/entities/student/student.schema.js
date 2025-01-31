@@ -23,6 +23,10 @@ module.exports = {
   ],
   create: [
     {
+      model: "classroomId",
+      required: true,
+    },
+    {
       model: "firstName",
       required: true,
     },
@@ -35,16 +39,38 @@ module.exports = {
       required: true,
     },
     {
-      model: "password",
-      required: true,
-    },
-    {
-      model: "role",
-      required: true,
-    },
-    {
-      model: "schoolId",
+      model: "enrollmentDate",
       required: false,
+    },
+  ],
+  get: [],
+  update: [
+    {
+      model: "firstName",
+      required: false,
+    },
+    {
+      model: "lastName",
+      required: false,
+    },
+    {
+      model: "email",
+      required: false,
+    },
+    {
+      model: "enrollmentDate",
+      required: false,
+    },
+  ],
+  delete: [],
+  transfer: [
+    {
+      model: "classroomId",
+      required: true,
+    },
+    {
+      model: "studentId",
+      required: true,
     },
   ],
 };

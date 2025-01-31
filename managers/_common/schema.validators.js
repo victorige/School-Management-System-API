@@ -1,8 +1,4 @@
 module.exports = {
-    'username': (data)=>{
-        if(data.trim().length < 3){
-            return false;
-        }
-        return true;
-    },
-}
+  objectId: (data) => require("mongoose").Types.ObjectId.isValid(data),
+  date: (data) => require("validate-date")(data),
+};

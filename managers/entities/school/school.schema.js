@@ -23,28 +23,40 @@ module.exports = {
   ],
   create: [
     {
-      model: "firstName",
+      model: "name",
       required: true,
     },
     {
-      model: "lastName",
+      model: "address",
       required: true,
     },
     {
-      model: "email",
+      model: "contactEmail",
       required: true,
     },
     {
-      model: "password",
+      model: "phone",
       required: true,
     },
+  ],
+  get: [],
+  update: [
     {
-      model: "role",
-      required: true,
+      model: "name",
+      required: false,
     },
     {
-      model: "schoolId",
+      model: "address",
+      required: false,
+    },
+    {
+      model: "contactEmail",
+      required: false,
+    },
+    {
+      model: "phone",
       required: false,
     },
   ],
+  delete: [],
 };
