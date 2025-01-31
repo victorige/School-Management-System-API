@@ -34,22 +34,9 @@ module.exports = class User {
         .findOne({ email })
         .select("+password");
 
-      if (!user) {
-        return this.utils.throwError(
-          "Invalid email or password",
-          { email },
-          401
-        );
-      }
-
       // Validate password
-      if (!(await user.validatePassword(password))) {
-        return this.utils.returnError(
-          "Invalid email or password",
-          { email },
-          401
-        );
-      }
+      if (!user || !(await user.validatePassword(password)))
+        return this.utils.throwError("Invalid email or password", 401);
 
       // Remove password before returning user data
       const userResponse = user.toObject();
