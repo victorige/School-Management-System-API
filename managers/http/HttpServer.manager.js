@@ -39,7 +39,6 @@ module.exports = class HttpServer {
       legacyHeaders: false, // Disable `X-RateLimit-*` headers
     });
 
-    this.app.set("trust proxy", true);
     this.app.use("/api/", apiLimiter);
 
     // Error handling middleware
