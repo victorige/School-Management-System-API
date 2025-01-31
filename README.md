@@ -20,7 +20,7 @@ Ensure you have the following installed before setting up the project:
 
 - [Node.js](https://nodejs.org/) (v16+ recommended)
 - [MongoDB](https://www.mongodb.com/) (Local or Cloud Instance)
-- [Redis](https://redis.io/) (Optional but recommended for caching)
+- [Redis](https://redis.io/) (Caching)
 
 ## Installation
 
@@ -28,7 +28,7 @@ Ensure you have the following installed before setting up the project:
 
         git clone https://github.com/victorige/School-Management-System-API.git
 
-    cd school-management-api`
+        cd School-Management-System-API
 
 2.  **Install dependencies:**
 
