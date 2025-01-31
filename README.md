@@ -26,55 +26,55 @@ Ensure you have the following installed before setting up the project:
 
 1.  **Clone the repository:**
 
-        `git clone https://github.com/YOUR_GITHUB_USERNAME/school-management-api.git
+        git clone https://github.com/YOUR_GITHUB_USERNAME/school-management-api.git
 
     cd school-management-api`
 
 2.  **Install dependencies:**
 
-    `npm install`
+        npm install
 
 3.  **Set up environment variables:** Create a `.env` file in the root directory and add the following variables:
 
-    `SERVICE_NAME=school-managment
+        `SERVICE_NAME=school-managment
 
-    MONGO_URI=mongodb://localhost:27017/school-managment
-    REDIS_URI=redis://localhost:6379
+        MONGO_URI=mongodb://localhost:27017/school-managment
+        REDIS_URI=redis://localhost:6379
 
-    AUTH_TOKEN_SECRET=<jwt-secret>
-    SUPER_ADMIN_EMAIL=super.admin@exaple.com
-    SUPER_ADMIN_PASSWORD=password
+        AUTH_TOKEN_SECRET=<jwt-secret>
+        SUPER_ADMIN_EMAIL=super.admin@exaple.com
+        SUPER_ADMIN_PASSWORD=password
 
-    SERVER_PORT=5111
-    SERVER_URL=http://localhost:5111`
+        SERVER_PORT=5111
+        SERVER_URL=http://localhost:5111`
 
 4.  **Start MongoDB and Redis:** Ensure MongoDB and Redis are running before starting the API.
 
-        `mongod --dbpath /path/to/your/mongodb/data
+        mongod --dbpath /path/to/your/mongodb/data
 
-    redis-server`
+        redis-server
 
 5.  **Run the application:**
 
     - Development mode:
 
-      `npm run dev`
+            npm run dev
 
     - Production mode:
 
-      `npm run start`
+            npm run start
 
 ## API Documentation
 
 The API documentation is generated using Swagger. After starting the server, visit:
 
-`http://localhost:5111/api-docs`
+    http://localhost:5111/api-docs
 
 ## Auth Flow
 
 To use the application, you need to seed a super admin account via:
 
-`https://localhost:5111/api/seed/admin`
+    https://localhost:5111/api/seed/admin
 
 Then, you can log in with the `auth/login` endpoint to generate a Bearer token.
 
@@ -82,7 +82,7 @@ Then, you can log in with the `auth/login` endpoint to generate a Bearer token.
 
 The app is deployed to:
 
-`https://school-management-system-api-t2qn.onrender.com/api`
+    https://school-management-system-api-t2qn.onrender.com/api
 
 ## Database Schema Design
 
@@ -104,21 +104,21 @@ View the test coverage screenshot:
 
 Run the test suite with:
 
-`npm run test`
+    npm run test
 
 For test coverage:
 
-`npm run test:coverage`
+    npm run test:coverage
 
 ## Deployment Instructions
 
 1.  **Build and run the application in production mode:**
 
-    `npm run start`
+        npm run start
 
 2.  **Use a process manager (e.g., PM2) for better reliability:**
 
-    `pm2 start server.js --name school-management-api`
+        pm2 start server.js --name school-management-api
 
 ## Contribution
 
